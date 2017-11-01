@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layMainGallery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.onecode.stickyheadergrid.tonicartos.StickyGridHeadersGridView
+        android:id="@+id/gallery_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="4dp"
+        android:numColumns="4"
+        android:layout_above="@+id/btnOk"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:verticalSpacing="4dp" />
+
+
+
+
+<Button
+    android:id="@+id/btnOk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ok"
+    android:onClick="showSelected"
+    android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
